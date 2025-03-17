@@ -24,7 +24,7 @@ CREATE TABLE star (
     name VARCHAR(100) UNIQUE NOT NULL,
     description TEXT,
     age_in_millions_of_years NUMERIC(10,1) NOT NULL,
-    diameter_in_km NUMERIC(10,1) NOT NULL,
+    diameter_in_km NUMERIC(15,1) NOT NULL,
     galaxy_id INT REFERENCES galaxy(galaxy_id) NOT NULL
 );
 
